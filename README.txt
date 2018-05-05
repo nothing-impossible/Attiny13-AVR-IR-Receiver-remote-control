@@ -1,7 +1,7 @@
 # Attiny13-AVR-IR-Receiver-remote-control
 
 this is Attiny13 remote control IR Receiver Code for NEC protocol use interrupting configuration to receiver remote control data
-it tahe (Program Memory Usage : 618 bytes (60.4 %) , Data Memory Usage : 13 bytes ( 20.3 %)) from the Attiny13 
+it take (Program Memory Usage : 618 bytes (60.4 %) , Data Memory Usage : 13 bytes ( 20.3 %)) from the Attiny13 
 
 using attiny13 is cheap way to have IR wireless remote control to use it in your project.
 
