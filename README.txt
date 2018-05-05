@@ -5,7 +5,7 @@ it take (Program Memory Usage : 618 bytes (60.4 %) , Data Memory Usage : 13 byte
 
 using attiny13 is cheap way to have IR wireless remote control to use it in your project.
 
-*it's importing to connect the output of the ir receiver to the interrupt pin INT0 in attiny13 which is PIN PB1 according to the datasheet
+*it's importing to connect the output of the IR receiver to the interrupt pin INT0 in attiny13 which is PIN PB1 according to the datasheet
 
 it have 3 principle functions :
 1) the IR_Setup() which step the configuration setting like interrupt and timer.
