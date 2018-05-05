@@ -13,7 +13,7 @@
 bool IR_Code(uint32_t data);
 void IR_Scan();
 void IR_Setup();
-//10EFF906 10EFE916
+
 uint32_t IR_data_out=0;
 int main(void)
 {
@@ -90,12 +90,12 @@ uint8_t TCNT0_buffer = 0;
 uint8_t time_span = 0;
 void IR_Scan()
 {
-	//timer unit = 106.666 µs
+	//timer unit = 106.666 Âµs
 	if(TCNT0>=TCNT0_buffer)//if timer doesn't overflow
 	time_span = TCNT0-TCNT0_buffer; //get span time
 	else //if timer overflow
 	time_span=(256-TCNT0_buffer)+TCNT0; //get span time
-	if (time_span<=2)////delete any noise < or = then  213 µs
+	if (time_span<=2)////delete any noise < or = then  213 Âµs
 	return void();
 
 	if((PINB&(1<<IR_Input_Pin))==0)
