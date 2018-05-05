@@ -2,22 +2,23 @@
  * IR Receiver.c
  *
  * Created: 12/1/2017 11:10:41 AM
- * Author : EMI
+ * Author : Dz Inventors
  */ 
-#define F_CPU 9600000
+#define F_CPU 9600000//must stay at this speed
 #include <avr/io.h>
 #include <util/delay.h>
 #include <avr/interrupt.h>
 
 #define IR_Input_Pin PORTB1
-bool IR_Code(uint32_t data);
-void IR_Scan();
-void IR_Setup();
 
-uint32_t IR_data_out=0;
+bool IR_Code(uint32_t data);//check the IR Code 
+void IR_Scan();//scan IR data
+void IR_Setup();//setup mode 
+
+uint32_t IR_data_out=0;//IR data store
+
 int main(void)
 {
-    /* Replace with your application code */
 	IR_Setup();	  
 
 	DDRB|=1<<PORTB4;
@@ -27,9 +28,9 @@ int main(void)
 	while (1)
 	{
 
-		if (IR_Code(0x00FFA857))
+		if (IR_Code(0x00FFA857))//put the code you want to check it in the IR_Code function
 		{
-			PORTB|=1<<PORTB4;
+			PORTB|=1<<PORTB4;//do some actions
 		}
 		if(IR_Code(0x00FF6897))
 		{
@@ -80,14 +81,19 @@ ISR(INT0_vect)
 {
 	IR_Scan();
 }
+
 uint8_t time_high=0;
 uint8_t time_low=0;
+
 bool interrupter1=false;
 bool interrupter2=false;
 bool one_time=false;
+
 int conter=-1;
+
 uint8_t TCNT0_buffer = 0;
 uint8_t time_span = 0;
+
 void IR_Scan()
 {
 	//timer unit = 106.666 µs
