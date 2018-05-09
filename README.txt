@@ -14,3 +14,4 @@ it have 3 principle functions :
    and it return true if it is correct and false if it is wrong.
    
 enjoy.
+by Dz Inventors
