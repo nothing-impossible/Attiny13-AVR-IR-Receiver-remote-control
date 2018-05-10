@@ -1,5 +1,5 @@
 /*
- * IR Receiver.c
+ * IR Receiver.cpp
  *
  * Created: 12/1/2017 11:10:41 AM
  * Author : Dz Inventors
