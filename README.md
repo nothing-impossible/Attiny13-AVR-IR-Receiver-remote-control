@@ -5,7 +5,7 @@ This is Attiny13 remote control IR Receiver Code for NEC protocol, it uses inter
 ## Resources
 
 ### Program Memory Usage:
-`618 bytes (60.4%)``
+`618 bytes (60.4%)`
 ### Data Memory Usage: 
 `13 bytes (20.3%)`
 
