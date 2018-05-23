@@ -13,6 +13,8 @@ Using attiny13 is a cheap way to have IR wireless remote control to use it in yo
 
 *it's importing to connect the output of the IR receiver to the interrupt pin INT0 in attiny13 which is PIN PB1 according to the datasheet*
 
+![alt text](https://scontent.fmad3-6.fna.fbcdn.net/v/t1.0-9/31944694_1935346020109838_2838574143971000320_n.jpg?_nc_cat=0&oh=61a6f3e8b8658d7540ac52a65d24ee0f&oe=5B8F4362)
+
 It has 3 principle functions:
 
 1- The `IR_Setup()` which setup the configuration setting like interrupt and timer.
